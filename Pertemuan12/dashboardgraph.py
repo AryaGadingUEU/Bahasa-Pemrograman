@@ -5,7 +5,7 @@ import numpy as np
 fig = px.line(
     x = np.array([0, 6]),
     y = np.array([0, 250]), 
-    title="sample dashboard", height=325
+    title="sample dashboard", tinggi=325
 )
 
 app = Dash()

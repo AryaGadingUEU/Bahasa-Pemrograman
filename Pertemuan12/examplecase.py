@@ -123,7 +123,7 @@ body_app = dbc.Container([
     html.Br(),
     html.Br(),
 
-    dbc.Row([dbc.Col(dcc.Graph(id = 'world-graph', figure = world_map(df_world_f)),style = {'height':'450px'},xs = 12, sm = 12, md = 6, lg = 6, xl = 6),
+    dbc.Row([dbc.Col(dcc.Graph(id = 'world-graph', figure = world_map(df_world_f)),style = {'tinggi':'450px'},xs = 12, sm = 12, md = 6, lg = 6, xl = 6),
 
              dbc.Col([html.Div(id = 'dropdown-div', children =
              [dcc.Dropdown(id = 'country-dropdown',
@@ -133,7 +133,7 @@ body_app = dbc.Container([
                  )], style = {'width':'100%', 'display':'inline-block'}),
 
                       html.Div(id = 'world-table-output')
-                      ],style = {'height':'450px','text-align':'center'},xs = 12, sm = 12, md = 6, lg = 6, xl = 6)
+                      ],style = {'tinggi':'450px','text-align':'center'},xs = 12, sm = 12, md = 6, lg = 6, xl = 6)
 
              ])
 
@@ -147,7 +147,7 @@ navbar = dbc.Navbar( id = 'navbar', children = [
 
     html.A(
     dbc.Row([
-        dbc.Col(html.Img(src = COVID_IMG, height = "70px")),
+        dbc.Col(html.Img(src = COVID_IMG, tinggi = "70px")),
         dbc.Col(
             dbc.NavbarBrand("Covid-19 Live Tracker", style = {'color':'black', 'fontSize':'25px','fontFamily':'Times New Roman'}
                             )

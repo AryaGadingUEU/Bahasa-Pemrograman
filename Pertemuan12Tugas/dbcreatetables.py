@@ -1,13 +1,12 @@
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="172.30.216.31",
+  host="192.168.0.188",
   port=23306,
   user="root",
   password="p455w0rd",
   database="PO_PT_LINTANG_SUMATERA"
 )
-
 db = mydb.cursor()
 
 db.execute("CREATE TABLE Supplier (kode_supplier char(4) NOT NULL, nama_supplier varchar(22) NOT NULL, telepon char(10) NOT NULL, PRIMARY KEY (kode_supplier))engine=innodb")
